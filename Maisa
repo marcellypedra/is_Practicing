@@ -1,0 +1,68 @@
+
+*/
+
+function findmultiples(integer, limit) {
+    let cnt = 1;
+    let multi = integer;
+    let result = []
+
+    while (multi <= limit){
+        result.push(multi)
+        cnt++
+        multi = cnt * integer;
+        
+}
+
+console.log(result)
+
+return result
+
+
+}
+    
+findmultiples(integer: 3, limit: 1000)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

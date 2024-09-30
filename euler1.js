@@ -1,3 +1,4 @@
+
 //Find the sum of all the multiples of 3 or 5 below 1000.
 
 //Crete a function to find the sum of all the multiples of a or 
@@ -21,6 +22,11 @@ function findamultiples(integer, limit) {
     }
     
 findamultiples(integer:[3,5], limit:1000)
+
+
+
+
+
 
 
 
