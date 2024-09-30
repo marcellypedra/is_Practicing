@@ -15,6 +15,8 @@ function findamultiples(integer, limit) {
         result.push(multi)
         cnt++
         multi = cnt*integer
+
+    alert(Number(result))
     }
     console.log(result)
     return result
