@@ -21,7 +21,7 @@ function findamultiples(integer, limit) {
         
     }
     
-findamultiples(integer:[3,5], limit:1000)
+findamultiples(integer,[3,5], limit,1000)
 
 
 
