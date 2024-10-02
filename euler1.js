@@ -20,7 +20,7 @@ let multiplessum = () => {
         
     }
 
-   alert("The sum of all multiples is: " + result);
+   alert("The sum of all multiples is: " + sumnumbers);
    
    return sumnumbers
 }
