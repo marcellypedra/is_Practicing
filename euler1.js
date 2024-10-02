@@ -8,7 +8,7 @@
 
 let sumnumbers = 0;
 
-let multiplessum = ( ) => {
+let multiplessum = () => {
     let Numbera = document.getElementById("Numbera").value;
     let Numberb = document.getElementById("Numberb").value;
     let Numbern = document.getElementById("Numbern").value;
