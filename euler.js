@@ -9,6 +9,12 @@ Crete a function to find the sum of all the multiples of a or
 
 3. Allow the user to enter the parameters via text box(es) and alert them to the output
 */
+
+
+Demostrate some DOM manipulation in the exercise. 
+For example changing the value of a result div , hiding inputs once the button is clicked..
+
+
 alert("Loaded Euler JS");
 a=3;
 b=5;

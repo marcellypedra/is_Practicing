@@ -6,22 +6,19 @@
 
 //Allow the user to enter the parameters via text box(es) and alert them to the output
 
-function findamultiples(integer, limit) {
-    let cnt=1
-    multi=integer
-    let result = []
+let sumnumbers = 0;
 
-    while (multi < 1000) {
-        result.push(multi)
-        cnt++
-        multi = cnt*integer
+let multiplessum = ( ) => {
+    let Numbera = document.getElementById("Numbera").value;
+    let Numberb = document.getElementById("Numberb").value;
+    let Numbern = document.getElementById("Numbern").value;
+    for (i = 0; i < Numbern; i++) {
+        if ((i % Numbera == 0) || (i % Numberb == 0))
+            sumnumbers += i; 
+    }
 
-    alert(Number(result))
-    }
-    console.log(result)
-    return result
-        
-    }
+    alert("The sum of all multiples is: " + sumnumber)
+}
     
 
 
