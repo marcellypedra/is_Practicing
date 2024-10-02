@@ -17,11 +17,11 @@ let multiplessum = () => {
         sumnumbers += i; 
 
         }
-        
+    
+    alert("The sum of all multiples is: " + sumnumbers);    
     }
 
-   alert("The sum of all multiples is: " + sumnumbers);
-   
+      
    return sumnumbers
 }
 
