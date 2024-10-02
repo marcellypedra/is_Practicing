@@ -13,9 +13,10 @@ let multiplessum = () => {
     let Numberb = document.getElementById("Numberb").value;
     let Numbern = document.getElementById("Numbern").value;
     for (i = 0; i < Numbern; i++) {
-        if ((i % Numbera == 0) || (i % Numberb == 0))
-            return sumnumbers += i; 
-
+        if ((i % Numbera == 0) || (i % Numberb == 0)) {
+        sumnumbers += i; 
+        }
+           
         alert("The sum of all multiples is: " + sumnumbers)
     }
    
