@@ -13,13 +13,16 @@ let multiplessum = () => {
     let Numberb = document.getElementById("Numberb").value;
     let Numbern = document.getElementById("Numbern").value;
     for (i = 0; i < Numbern; i++) {
-        if ((i % Numbera == 0) || (i % Numberb == 0)) {
-        sumnumbers += i;     
+        if ((i % Numbera === 0) || (i % Numberb === 0)) {
+        sumnumbers += i; 
+
         }
-        let result = multiplessum;
-    alert("The sum of all multiples is: " + result)  
+        
     }
-    
+
+   alert("The sum of all multiples is: " + result);
+   
+   return sumnumbers
 }
 
 
