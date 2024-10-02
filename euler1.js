@@ -17,7 +17,7 @@ let multiplessum = () => {
             sumnumbers += i; 
     }
 
-    alert("The sum of all multiples is: " + (multiplessum))
+    alert("The sum of all multiples is: " + multiplessum)
 }
     
 
