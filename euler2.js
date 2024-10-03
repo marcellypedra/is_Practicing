@@ -14,7 +14,6 @@ let multiplessum = () => {
     for (i = 0; i < Numbern; i++) {
         if ((i % Numbera === 0) || (i % Numberb === 0)) 
         sumnumbers += i; 
-return sumnumbers
        
     alert("The sum of all multiples is: " + sumnumbers)
 
