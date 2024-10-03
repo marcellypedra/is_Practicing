@@ -9,9 +9,12 @@
 let sumnumbers = 0;
 
 let multiplessum = () => {
-    let Numbera = document.getElementById("Numbera").value;
-    let Numberb = document.getElementById("Numberb").value;
-    let Numbern = document.getElementById("Numbern").value;
+
+    sumnumbers = 0;
+
+    let Numbera = Number(document.getElementById("Numbera").value);
+    let Numberb = Number(document.getElementById("Numberb").value);
+    let Numbern = Number(document.getElementById("Numbern").value);
     for (i = 0; i < Numbern; i++) {
         if ((i % Numbera == 0) || (i % Numberb == 0)) {
         sumnumbers += i; 
