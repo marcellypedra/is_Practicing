@@ -22,7 +22,7 @@ let multiplessum = () => {
     
     } 
 
-    alert("The sum of all multiples is: " + sumnumbers)
+    alert("The sum of all multiples is: " + sumnumbers);
 
     document.getElementById("result") = sumnumbers
 }
