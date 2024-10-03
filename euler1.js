@@ -14,7 +14,9 @@ let multiplessum = () => {
     let Numbern = document.getElementById("Numbern").value;
     for (i = 0; i < Numbern; i++) {
         if ((i % Numbera == 0) || (i % Numberb == 0)) {
-        sumnumbers += i; alert("The sum of all multiples is: " + sumnumbers)
+        sumnumbers += i; 
+    let result = sumnumbers;
+        alert("The sum of all multiples is: " + sumnumbers)
     }
     
     }     
