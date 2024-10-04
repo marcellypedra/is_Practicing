@@ -6,6 +6,8 @@
 
 //Allow the user to enter the parameters via text box(es) and alert them to the output
 
+//Demostrate some DOM manipulation in the 
+
 let sumnumbers = 0;
 
 let multiplessum = () => {
@@ -21,7 +23,8 @@ let multiplessum = () => {
         }
     
     } 
-
+    button.addEventListener("click", multiplessum)
+    
     alert("The sum of all multiples is: " + sumnumbers);
 
     document.getElementById("result") = sumnumbers;
