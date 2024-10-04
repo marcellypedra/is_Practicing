@@ -27,6 +27,7 @@ let multiplessum = () => {
 
     
      document.getElementById("result").innerHTML = sumnumbers;
+     document.getElementById("resultbox").value = sumnumbers;
 }
 
 
