@@ -23,8 +23,8 @@ let multiplessum = () => {
         }
     
     } 
-    button.addEventListener("click", multiplessum)
-    
+    button.addEventListener("click", multiplessum);
+
     alert("The sum of all multiples is: " + sumnumbers);
 
     document.getElementById("result") = sumnumbers;
