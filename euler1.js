@@ -6,7 +6,8 @@
 
 //Allow the user to enter the parameters via text box(es) and alert them to the output
 
-//Demostrate some DOM manipulation in the 
+//Demostrate some DOM manipulation in the exercise. 
+//For example changing the value of a result div , hiding inputs once the button is clicked..
 
 let sumnumbers = 0;
 
