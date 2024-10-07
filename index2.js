@@ -8,5 +8,4 @@ const summulti = l.reduce ((p, c) => {
      return p + c
 
     }, 0)
-
-    
+alert("The result is: " + summulti)
