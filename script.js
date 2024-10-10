@@ -22,20 +22,20 @@ let multiplessum = () => {
 
     let Numbera = Number(document.getElementById("Numbera").value);
     let Numberb = Number(document.getElementById("Numberb").value);
-    const l = (document.getElementById("nlista").value, document.getElementById("nlistb").value, document.getElementById("nlistc").value)
+    const l = (document.getElementById("nlista").value, document.getElementById("nlistb").value, document.getElementById("nlistc").value); {
         let inputArray = []        
         for (i = 0; i < l.length; i++) {
-            let value = l[i].value.trim(); 
+            let value = l[i].value.join(", "); 
                 if (value) { 
                     inputArray.push(value);
                 }
             }
-            let result = inputArray.join(", ");
 
-            
-
-        for (i = 0; i < result.length; i++) {
-        if ((i % Numbera == 0) || (i % Numberb == 0)) {
+        }    
+ 
+       for (i = 0; i < inputArray.length; i++) {
+       
+       if ((i % Numbera == 0) || (i % Numberb == 0)) {
         sumnumbers += i;              
     }
      
