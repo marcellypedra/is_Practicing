@@ -32,17 +32,17 @@ let multiplessum = () => {
             }
             let result = inputArray.join(", ");
 
-    for (i = 0; i < result.length; i++) {
-       if ((i % Numbera == 0) || (i % Numberb == 0)) {
-        sumnumbers += i;              
-    }
+    //for (i = 0; i < result.length; i++) {
+       //if ((i % Numbera == 0) || (i % Numberb == 0)) {
+       // sumnumbers += i;              
+   // }
      
-     }
-         document.getElementById("clickme").onclick = multiplessum;
-         
-         alert("The sum of all multiples is: " + sumnumbers);
+     //}
+         //document.getElementById("clickme").onclick = multiplessum;
 
-         document.getElementById("resultbox").value = sumnumbers;
+        // alert("The sum of all multiples is: " + sumnumbers);
+
+         //document.getElementById("resultbox").value = sumnumbers;
 }
       
 
