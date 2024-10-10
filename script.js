@@ -47,7 +47,7 @@ let multiplessum = () => {
    
 }
 
-document.getElementById("clickme").onclick = multiplessum;
+document.getElementById("clickme").addEventListener('click', multiplessum);
 
 
 
