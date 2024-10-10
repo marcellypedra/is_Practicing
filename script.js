@@ -25,12 +25,12 @@ let multiplessum = () => {
     let Numbera = Number(document.getElementById("Numbera").value);
     let Numberb = Number(document.getElementById("Numberb").value);
     const l = [
-        Number(document.getElementById("nlista").value), 
-        Number(document.getElementById("nlistb").value), 
-        Number(document.getElementById("nlistc").value)
+        Number(document.getElementById("nlista").value) || 0, 
+        Number(document.getElementById("nlistb").value) || 0, 
+        Number(document.getElementById("nlistc").value) || 0
     ]; 
     
-    if (isNaN(Numbera) || isNaN(Numberb) || l.some(isNaN)) {
+    if (isNaN(Numbera) || isNaN(Numberb)) {
         alert("Please fill in all fields with valid numbers.");
         return;
     }
