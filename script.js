@@ -16,7 +16,7 @@
 //l is a list of integers
 //find the sum of all the multiples of elements of a in l
 
-let sumnumbers = 0
+let sumnumbers = 0;
 
 let multiplessum = () => {
 
@@ -32,14 +32,16 @@ let multiplessum = () => {
         
     for (let i = 0; i < l.length; i++) {
        
-       if ((l[i] % Numbera == 0) || (l[i] % Numberb == 0)) {
-        sumnumbers += l[i];              
-    }
-     
-     }
-        alert("The sum of all multiples is: " + sumnumbers);
+       if ((l[i] % Numbera === 0) || (l[i] % Numberb === 0)) {
+        sumnumbers += l[i];   
 
-        document.getElementById("resultbox").value = sumnumbers;
+       }
+     
+    }
+
+    alert("The sum of all multiples is: " + sumnumbers);
+
+    document.getElementById("resultbox").value = sumnumbers;
 };
 
 document.getElementById("clickme").onclick = multiplessum;
