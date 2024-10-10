@@ -16,8 +16,6 @@
 //l is a list of integers
 //find the sum of all the multiples of elements of a in l
 
-let sumnumbers = 0;
-
 let multiplessum = () => {
 
     sumnumbers = 0;
