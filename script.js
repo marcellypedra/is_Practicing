@@ -32,14 +32,14 @@ let multiplessum = () => {
             }
             let result = inputArray.join(", ");
 
-            console.log(result)
+            
 
-    //for (i = 0; i < result.length; i++) {
-       //if ((i % Numbera == 0) || (i % Numberb == 0)) {
-       // sumnumbers += i;              
-   // }
+        for (i = 0; i < result.length; i++) {
+        if ((i % Numbera == 0) || (i % Numberb == 0)) {
+        sumnumbers += i;              
+    }
      
-     //}
+     }
          document.getElementById("clickme").onclick = multiplessum;
 
         // alert("The sum of all multiples is: " + sumnumbers);
