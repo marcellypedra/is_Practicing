@@ -42,8 +42,10 @@ let multiplessum = () => {
     alert("The sum of all multiples is: " + sumnumbers);
 
     document.getElementById("resultbox").value = sumnumbers;
+
+    document.getElementById("clickme").onclick = multiplessum;
 };
 
-document.getElementById("clickme").onclick = multiplessum;
+
       
 
