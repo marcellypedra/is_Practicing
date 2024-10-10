@@ -19,11 +19,11 @@ let basketCost=()=>{
         Number(document.getElementById("qty2").value),
         Number(document.getElementById("qty3").value)        
     ];
-    const prices = {
-        "Flour 1kg": 1,
-        "Bread 100g": 2,
-        "Milk 1l": 3
-
+    const prices = [
+        document.getElementById("product1") = 1,
+        document.getElementById("product2") = 2,
+        document.getElementById("product3") = 3
+    ]
     };
         
     
