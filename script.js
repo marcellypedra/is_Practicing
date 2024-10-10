@@ -44,7 +44,7 @@ let multiplessum = () => {
     document.getElementById("resultbox").value = sumnumbers;
 
     document.getElementById("clickme").onclick = multiplessum;
-};
+}
 
 
       
