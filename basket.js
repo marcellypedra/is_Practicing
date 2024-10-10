@@ -1,5 +1,3 @@
-alert("Loaded Basket JS");
-
 /*
 Create a function that takes two objects,
 basket and prices as parameters
@@ -12,36 +10,37 @@ let basketCost=()=>{
     sumnumbers = 0;
 
     const products = [
-        Text(document.getElementsById("product1").value),
-        Text(document.getElementsById("product2").value),
-        Text(document.getElementById("product3").value)
+       document.getElementsById("product1").checked ? "Flour 1Kg" : null,
+       document.getElementsById("product2").checked ? "Bread 100g" : null,
+       document.getElementById("product3").checked ? "Milk 1l" : null
     ];
     const quantity = [
         Number(document.getElementById("qty1").value),
         Number(document.getElementById("qty2").value),
         Number(document.getElementById("qty3").value)        
     ];
-    const costs = [
-        Number(document.getElementByValue("1").value),
-        Number(document.getElementByValue("2").value),
-        Number(document.getElementByValue("3").value)        
-    ];
+    const prices = {
+        "Flour 1kg": 1,
+        "Bread 100g": 2,
+        "Milk 1l": 3
+
+    };
+        
     
-    const basket = products.map(function(value, index) {
-        return value + " " + quantity[index];
-    });
+    let basket = [];
+    for (i = 0; i < products.length; i++) {
+    if(products[i] !== null && quantity[i] >0) {
+        let productCost = quantity[i] * prices [products[i]];
+        sumnumbers += productCost;
 
-    const prices = products.map(function(value, index){
-        return value +" " + costs[index];
-    });
+        basket.push('${products[i]} x ${quantity[i]} = £${productCost}');
 
-for(i = 0; i < basket[quantity].length; i++) {
-    if(basket[quantity] * prices[costs] === 0) {
-        sumnumbers += i;
     }
 }
-document.getElementById("basket").value = ("const basket" + "const prices");   
-document.getElementById("totalbox").value = sumnumbers;
+document.getElementById("basket").value = basket.join("\n");
+
+document.getElementById("totalbox").value = '£${sumnumbers}';
+
 }
 
 document.getElementById("clickme").addEventListener('click', basketCost);
