@@ -25,9 +25,9 @@ let multiplessum = () => {
     let Numbera = Number(document.getElementById("Numbera").value);
     let Numberb = Number(document.getElementById("Numberb").value);
     const l = [
-        document.getElementById("nlista").value, 
-        document.getElementById("nlistb").value, 
-        document.getElementById("nlistc").value)
+        Number(document.getElementById("nlista").value), 
+        Number(document.getElementById("nlistb").value), 
+        Number(document.getElementById("nlistc").value)
     ]; 
         
        for (i = 0; i < inputArray.length; i++) {
