@@ -30,7 +30,7 @@ let basketCost=()=>{
     let basket = [];
     for (i = 0; i < products.length; i++) {
     if(products[i] !== null && quantity[i] >0) {
-        let productCost = quantity[i] * prices [products[i]];
+        let productCost = quantity[i] * prices[i];
         sumnumbers += productCost;
 
         basket.push(`${products[i]} x ${quantity[i]} = £${productCost}`);
