@@ -23,10 +23,9 @@ let basketCost=()=>{
         document.getElementById("product1") = 1,
         document.getElementById("product2") = 2,
         document.getElementById("product3") = 3
-    ]
-    };
-        
+    ];
     
+            
     let basket = [];
     for (i = 0; i < products.length; i++) {
     if(products[i] !== null && quantity[i] >0) {
