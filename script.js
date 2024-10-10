@@ -65,7 +65,7 @@ let multiplessum = () => {
             document.getElementById("result").innerText = "Values: " + inputArray.join(", ");  
             //let value
            // if ((i % Numbera == 0) || (i % Numberb == 0)) {
-                sumnumbers += i;
+                //sumnumbers += i;
            // }
 
         }
