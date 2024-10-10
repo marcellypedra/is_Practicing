@@ -30,7 +30,7 @@ let multiplessum = () => {
         Number(document.getElementById("nlistc").value)
     ]; 
         
-       for (i = 0; i < inputArray.length; i++) {
+    for (let i = 0; i < l.length; i++) {
        
        if ((l[i] % Numbera == 0) || (l[i] % Numberb == 0)) {
         sumnumbers += l[i];              
