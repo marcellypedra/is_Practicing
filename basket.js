@@ -10,8 +10,8 @@ let basketCost=()=>{
     sumnumbers = 0;
 
     const products = [
-       document.getElementsById("product1").checked ? "Flour 1Kg" : null,
-       document.getElementsById("product2").checked ? "Bread 100g" : null,
+       document.getElementById("product1").checked ? "Flour 1Kg" : null,
+       document.getElementById("product2").checked ? "Bread 100g" : null,
        document.getElementById("product3").checked ? "Milk 1l" : null
     ];
     const quantity = [
