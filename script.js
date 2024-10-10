@@ -24,29 +24,24 @@ let multiplessum = () => {
 
     let Numbera = Number(document.getElementById("Numbera").value);
     let Numberb = Number(document.getElementById("Numberb").value);
-    const l = (document.getElementById("nlista").value, document.getElementById("nlistb").value, document.getElementById("nlistc").value); {
-        let inputArray = []        
-        for (i = 0; i < l.length; i++) {
-            let value = l[i].value.join(", "); 
-                if (value) { 
-                    inputArray.push(value);
-                }
-            }
-
-        }    
- 
+    const l = [
+        document.getElementById("nlista").value, 
+        document.getElementById("nlistb").value, 
+        document.getElementById("nlistc").value)
+    ]; 
+        
        for (i = 0; i < inputArray.length; i++) {
        
-       if ((i % Numbera == 0) || (i % Numberb == 0)) {
-        sumnumbers += i;              
+       if ((l[i] % Numbera == 0) || (l[i] % Numberb == 0)) {
+        sumnumbers += l[i];              
     }
      
      }
-         document.getElementById("clickme").onclick = multiplessum;
-
         alert("The sum of all multiples is: " + sumnumbers);
 
         document.getElementById("resultbox").value = sumnumbers;
-}
+};
+
+document.getElementById("clickme").onclick = multiplessum;
       
 
