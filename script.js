@@ -29,22 +29,25 @@ let multiplessum = () => {
         Number(document.getElementById("nlistb").value), 
         Number(document.getElementById("nlistc").value)
     ]; 
-        
+    
+    if (isNaN(Numbera) || isNaN(Numberb) || l.some(isNaN)) {
+        alert("Please fill in all fields with valid numbers.");
+        return;
+    }
+
     for (let i = 0; i < l.length; i++) {
-       
-       if ((l[i] % Numbera === 0) || (l[i] % Numberb === 0)) {
+        if ((l[i] % Numbera === 0) || (l[i] % Numberb === 0)) {
         sumnumbers += l[i];   
 
        }
      
     }
 
-    document.getElementById("clickme").onclick = multiplessum;
-    
     document.getElementById("resultbox").value = sumnumbers;
    
 }
 
+document.getElementById("clickme").onclick = multiplessum;
 
 
 
