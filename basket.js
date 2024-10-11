@@ -29,6 +29,8 @@ let basketCost=()=>{
     let basket = [];
     for (i = 0; i < products.length; i++) {
     if(products[i] !== null && quantity[i] >0) {
+        console.log(quantity[i])
+        console.log(prices[i])
         let productCost = quantity[i] * prices[i];
         sumnumbers += productCost;
 
