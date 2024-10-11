@@ -19,11 +19,11 @@ let basketCost=()=>{
         Number(document.getElementById("qty2").value),
         Number(document.getElementById("qty3").value)        
     ];
-    const prices = [
-        document.getElementById("product1") = 1,
-        document.getElementById("product2") = 2,
-        document.getElementById("product3") = 3
-    ];
+    let prices = {
+        "Flour 1kg" : 1,
+        "Bread 100g" : 2,
+        "Milk 1l" : 3
+    };
     
             
     let basket = [];
@@ -32,13 +32,13 @@ let basketCost=()=>{
         let productCost = quantity[i] * prices[i];
         sumnumbers += productCost;
 
-        basket.push(`${products[i]} x ${quantity[i]} = £${productCost}`);
+        basket.push(`${products[i]} x ${quantity[i]} = "£" + ${productCost}`);
 
     }
 }
 document.getElementById("basket").value = basket.join("\n");
 
-document.getElementById("totalbox").value = `£${sumnumbers}`;
+document.getElementById("totalbox").value = `"£" + ${sumnumbers}`;
 
 }
 
