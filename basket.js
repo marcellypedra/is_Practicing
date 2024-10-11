@@ -32,13 +32,13 @@ let basketCost=()=>{
         let productCost = quantity[i] * prices[i];
         sumnumbers += productCost;
 
-        basket.push(`${products[i]} x ${quantity[i]} = "£" + ${productCost}`);
+        basket.push(`${products[i]} x ${quantity[i]} = £${productCost}`);
 
     }
 }
 document.getElementById("basket").value = basket.join("\n");
 
-document.getElementById("totalbox").value = `"£" + ${sumnumbers}`;
+document.getElementById("totalbox").value = `£${sumnumbers}`;
 
 }
 
